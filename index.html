@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome cdn link --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>CR CINEMATIC</title>
+   
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo"> <img src="" alt=""></a>
+            <div class="end_bx">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li class="dropdown">
+                    <a href="#">Category <i class="fas fa-angle-down"></i></a>
+                        <div class="list">
+                         <a href="#">Trends Now</a>
+                         <a href="#">Popular</a>
+                         <a href="#">Action</a>
+                     </div>
+                    </li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search movies..." id="search">
+                    <i class="fas fa-search" id="search_icon"></i>
+                </div>
+                <div class="bell">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="user">
+                    <img src="img/cr logo.png" alt="Chandan Rathod" title="Chandan Rathod">
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h6>Duration: <span>1h 50m</span></h6>
+            <h3><i class="fa-solid fa-star"></i>7.1
+                <span>Family / Comedy</span>
+            </h3>
+            <h1>Zootopia 2</h1>
+            <p>Rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives in Zootropolis and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.</p>
+               <div class="btns">
+                    <button><i class="fa-solid fa-play"></i>WATCH</button>
+                    <button><i class="fa-solid fa-plus"></i>ADD LIST</button>
+               </div>
+            </div>
+            <div class="slider_btns">
+                <h6 class="slider"></h6>
+                <h6 class="slider"></h6>
+            </div>
+    </header>
+
+    <!--  tranding box start  -->
+    <div class="tranding_bx">
+         <li><a href="#" class="active"><i class="fas fa-angle-double-up"></i>Trends Now<span></span></a></li>
+         <li><a href="#"><i class="fa-solid fa-fire"></i>Popular<span></span></a></li>
+         <li><a href="#"><i class="fa-solid fa-star"></i>Preferences<span></span></a></li>
+         <li><a href="#"><i class="fa-solid fa-plus"></i>Recently Added<span></span></a></li>
+    </div>
+    <!-- category box start -->
+    <div class="cato_bx" id="cato_bx">
+        <button>Action</button>
+        <button>Crime</button>
+        <button>Adventure</button>
+        <button>Animation</button>
+        <button>Comedy</button>
+        <button>Documentary</button>
+        <button>Drama</button>
+        <button>WebSeries</button>
+        <button>Scifi</button>
+        <button>Horror</button>
+        <!-- all button copyed -->
+         <div class="cato_left_right">
+            <i class="fa-sharp fa-solid fa-angle-down" id="left_scroll"></i>
+         </div>
+         <div class="cato_left_right">
+            <i class="fa-sharp fa-solid fa-angle-down" id="right_scroll"></i>
+         </div>
+    </div>
+    <!-- movies box strat -->
+  <div class="movie_bx_1" id="movies_bx_1">
+    <div class="card">
+        <a href="#">
+            <img src="img/tere ishk meh poster.jpg" alt="">
+            
+            <div class="content">
+                <h5>Tere Ishk Mein</h5>
+
+                <h6>
+                    <span>2026</span>
+                    <div class="rate">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-star"></i>
+                        <h6>6.2</h6>
+                    </div>
+                </h6>
+            </div>
+        </a>
+</div>
+<div class="card">
+        <a href="#">
+            <img src="img/juraaic world 2025.jpg" alt="">
+            
+            <div class="content">
+                <h5>Jurassic World Rebirth</h5>
+
+                <h6>
+                    <span>2025</span>
+                    <div class="rate">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-star"></i>
+                        <h6>5.8</h6>
+                    </div>
+                </h6>
+            </div>
+        </a>    
+    </div>  
+</div>
+<!-- moives box end -->
+   <!-- video box start -->
+   <div class="video_bx">
+      <video>
+       <source src="Mission Impossible The Final Reckoning 2025.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+       <div class="control">
+           <div class="play_redo">
+                <i class="bi bi-play-fill"></i>
+                <i class="bi bi-arrow-clockwise"></i>
+                <span>10</span>
+            </div>    
+           <div class="start_seekbar_end">
+                <span>28.04</span>
+                <div class="seek">
+                    <input type="range">
+                    <h5></h5>
+                    <h4></h4>
+                    <h6></h6>
+                </div>    
+                <span>40.06</span>
+            </div>    
+           <div class="cc_vol_screen">
+               <i class="bi bi-badge-cc-fill"></i>
+               <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+               <input type="range" name="vol" id="vol">
+               <i class="bi bi-arrows-fullscreen"></i>
+           </div>
+       </div>   
+
+       <h4 class="title_video">Zootopia 2 (2026)</h4>
+       <span class="watching"><i class="fas fa-eye"></i>Watching</span>
+       <div class="heart_pluse"> <i class="fas fa-heart"></i> <i class="fas fa-plus"></i></div>
+       <div class="video_list">
+           <img src="img/Zootopia 2 Screen shot 1.jpg" alt="" class="video_1">
+           <img src="img/Zootopia 2 screen shot 2.jpg" alt="" class="video_1">
+           <img src="img/Zootopia 2 screen shot 3.jpg" alt="" class="video_1">
+         </div>
+    </div>       
+   <!--  video box end  -->
+   <!--tranding box2 start-->
+    <div class="tranding_bx" style="margin-top: 20px;">
+         <li><a href="#" class="active"><i class="fa-solid fa-photo-film"></i> Movies <span></span></a></li>
+         <li><a href="#"><i class="fa-solid fa-film"></i> Series <span></span></a></li>
+         <li><a href="#"><i class="fa-solid fa-check"></i> Original Series <span></span></a></li>
+         <li><a href="#">Trailer <span></span></a></li>
+    </div>
+    <div class="cato_bx cato_bx2">
+        <div class="left_cato">
+        <button>Sort by</button>
+        <button>All</button>
+        <button>Lastest</button>
+        <button> Year <i class="fas fa-angle-down"></i>
+        <div class="year_bx">
+            <li>2026</li>
+            <li>2025</li>
+            <li>2024</li>
+        </div>
+        </button>
+        <button id="a_z">A-Z <i class="fas fa-angle-down"></i>
+           <div class="year_bx letter">
+               <li>A</li>
+               <li>B</li>
+               <li>C</li>
+               <li>D</li>
+               <li>E</li>
+               <li>F</li>
+               <li>G</li>
+               <li>H</li>
+               <li>T</li>
+               <li>Z</li>
+            </div></button>
+    </div>        
+    <div class="right_cato">
+        <i class="fas fa-star"></i>
+        <input type="range" name="" id="" min="4.2" max="9.9">
+        <span>7.0</span>
+        </div>    
+    </div>
+
+    <div class="movie_bx_1 movie_bx_2"></div>
+    <script src="app.js"></script>
+  </body>
+</html> 
