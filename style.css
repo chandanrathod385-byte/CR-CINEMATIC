@@ -982,6 +982,277 @@ img,video{
 
 /* javascript classes end */
 
+/* ===== CR CINEMATIC MOBILE FIX ===== */
+
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        height: 100svh;
+        min-height: 700px;
+        overflow: hidden;
+    }
+
+    /* Navigation */
+    header nav {
+        height: 75px;
+        padding: 0 16px;
+        justify-content: flex-end;
+    }
+
+    header nav .logo img {
+        width: 65px;
+    }
+
+    header nav .end_bx {
+        gap: 12px;
+        min-width: 0;
+    }
+
+    header nav .end_bx ul {
+        gap: 18px;
+    }
+
+    header nav .end_bx ul li {
+        margin: 0;
+    }
+
+    header nav .end_bx ul li a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    header nav .end_bx .bell {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    header nav .end_bx .user {
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+    }
+
+    header nav .end_bx .search input.search_input {
+        width: 100px;
+        max-width: 25vw;
+    }
+
+    /* Movie details */
+    header .content {
+        width: auto;
+        max-width: 100%;
+        margin: 110px 20px 0;
+        z-index: 5;
+    }
+
+    header .content h6 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    header .content h3 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    header .content h3 i {
+        font-size: 14px;
+    }
+
+    header .content h3 span {
+        font-size: 12px;
+    }
+
+    header .content h1 {
+        font-size: clamp(34px, 9vw, 46px);
+        line-height: 1.15;
+        margin: 18px 0;
+        overflow-wrap: anywhere;
+    }
+
+    header .content p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+        word-break: normal;
+        overflow-wrap: break-word;
+        margin-bottom: 22px;
+    }
+
+    /* WATCH and ADD LIST */
+    header .content .btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+    }
+
+    header .content .btns button {
+        margin: 0;
+        padding: 10px 16px;
+        font-size: 17px;
+        border-radius: 18px;
+        white-space: nowrap;
+    }
+
+    /* Slider dots */
+    header .slider_btns {
+        width: auto;
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+
+    /* Movie categories */
+    .tranding_bx {
+        width: 92%;
+        gap: 15px;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .tranding_bx li {
+        flex-shrink: 0;
+    }
+
+    .tranding_bx li a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .cato_bx {
+        width: 95%;
+        padding: 15px 0;
+        gap: 8px;
+    }
+
+    .cato_bx button {
+        flex-shrink: 0;
+        padding: 7px 18px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    /* Movie cards */
+    .movie_bx_1 {
+        height: 235px;
+    }
+
+    .movie_bx_1 .card {
+        min-width: 125px;
+        height: 225px;
+    }
+
+    .movie_bx_1 .card a .content h5 {
+        font-size: 13px;
+    }
+
+    .movie_bx_1 .card a .content h6 {
+        font-size: 12px;
+    }
+
+    /* Video player */
+    .video_bx {
+        width: 94%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 12px;
+    }
+
+    .video_bx video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .video_bx .title_video {
+        font-size: 13px;
+    }
+
+    .video_bx .control {
+        width: 96%;
+        height: 30px;
+        bottom: 5px;
+        padding: 0 8px;
+    }
+
+    .video_bx .control .cc_vol_screen {
+        width: auto;
+        gap: 8px;
+    }
+
+    .video_bx .control .cc_vol_screen .bi {
+        font-size: 15px;
+    }
+
+    .video_bx .control .start_seekbar_end {
+        width: 65%;
+    }
+
+    .video_bx .control .start_seekbar_end span {
+        width: auto;
+        font-size: 9px;
+        margin: 0 4px;
+    }
+
+    .video_bx .video_list {
+        display: none;
+    }
+
+    .cato_bx2 {
+        max-width: 100%;
+        gap: 10px;
+        overflow-x: auto;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 380px) {
+
+    header nav {
+        padding: 0 10px;
+    }
+
+    header nav .logo img {
+        width: 50px;
+    }
+
+    header nav .end_bx {
+        gap: 8px;
+    }
+
+    header nav .end_bx ul {
+        gap: 12px;
+    }
+
+    header nav .end_bx ul li a {
+        font-size: 12px;
+    }
+
+    header .content {
+        margin: 90px 15px 0;
+    }
+
+    header .content h1 {
+        font-size: 32px;
+    }
+
+    header .content .btns button {
+        font-size: 15px;
+        padding: 9px 12px;
+    }
+}
+
 
 
 
