@@ -982,60 +982,7 @@ img,video{
 
 /* javascript classes end */
 
-/* CR CINEMATIC - Mobile Responsive Fix */
 
-@media screen and (max-width: 768px) {
-
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  header {
-    width: 100%;
-    max-width: 100%;
-    min-height: 100vh;
-    min-height: 100svh;
-    height: auto;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-
-  header nav {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 15px 12px;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-
-  header h1 {
-    font-size: clamp(32px, 9vw, 48px);
-    line-height: 1.15;
-    overflow-wrap: anywhere;
-  }
-
-  header p {
-    max-width: 100%;
-    font-size: 15px;
-    line-height: 1.6;
-    overflow-wrap: break-word;
-  }
-
-  header button {
-    max-width: 100%;
-    font-size: 16px;
-    padding: 12px 18px;
-  }
-
-  img, video {
-    max-width: 100%;
-  }
-}
 
 
 
